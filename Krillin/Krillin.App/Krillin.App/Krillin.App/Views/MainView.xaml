@@ -15,17 +15,17 @@
 				<RowDefinition Height="*"/>
 			</Grid.RowDefinitions>
 
-			<Label x:Name="LblVersion"
+			<Label x:Name="LblVersion" AutomationId="LblVersion"
 				   Grid.Row="0"
 				   Text="{Binding Rss.Version}" FontSize="10" FontAttributes="Italic" 
 				   HorizontalTextAlignment="End"/>
 
-			<BoxView x:Name="BoxSeparator"
+			<BoxView x:Name="BoxSeparator" AutomationId="BoxSeparator"
 					 Grid.Row="1"
 					 BackgroundColor="LightGray"
 					 HeightRequest="1"/>
 
-			<ListView x:Name="ListPost"
+			<ListView x:Name="ListPost" AutomationId="ListPost"
 					  Grid.Row="2"
 					  HasUnevenRows="True"
 					  ItemsSource="{Binding Rss.Channel.Item}">
@@ -75,7 +75,6 @@
 					</DataTemplate>
 				</ListView.ItemTemplate>
 			</ListView>
-
 		</Grid>
 	</base:BaseView.Content>
 </base:BaseView>

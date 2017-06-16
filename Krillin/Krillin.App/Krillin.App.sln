@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Core", "2.Core", "{D6580C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.Tests", "0.Tests", "{1348D569-3172-449E-BD0D-DC2B9D912436}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krillin.App.UITests", "Krillin.App\Krillin.App.UITests\Krillin.App.UITests.csproj", "{E676BACC-64D5-4870-96C5-86A2B41D31B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
@@ -259,6 +261,54 @@ Global
 		{188D3C7E-DD07-4AED-9943-BEA4882F9548}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{188D3C7E-DD07-4AED-9943-BEA4882F9548}.Release|x64.ActiveCfg = Release|iPhone
 		{188D3C7E-DD07-4AED-9943-BEA4882F9548}.Release|x86.ActiveCfg = Release|iPhone
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Ad-Hoc|ARM.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Ad-Hoc|ARM.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Ad-Hoc|iPhoneSimulator.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Ad-Hoc|x64.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Ad-Hoc|x64.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Ad-Hoc|x86.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Ad-Hoc|x86.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.AppStore|Any CPU.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.AppStore|ARM.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.AppStore|ARM.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.AppStore|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.AppStore|iPhoneSimulator.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.AppStore|x64.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.AppStore|x64.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.AppStore|x86.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.AppStore|x86.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Debug|ARM.Build.0 = Debug|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Debug|x64.Build.0 = Debug|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Debug|x86.Build.0 = Debug|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Release|ARM.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Release|ARM.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Release|iPhone.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Release|x64.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Release|x64.Build.0 = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Release|x86.ActiveCfg = Release|Any CPU
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -268,27 +318,6 @@ Global
 		{D0CC2CF8-70D7-4FCF-951F-F0B860E5C846} = {D6580C2D-E850-44CA-960A-2DDD1A5F5AB4}
 		{70A997D8-0139-48A5-968F-79B37D46A57C} = {47F31AED-0FCD-4034-9ACF-7E8B438A3490}
 		{188D3C7E-DD07-4AED-9943-BEA4882F9548} = {47F31AED-0FCD-4034-9ACF-7E8B438A3490}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://marcoantonioblanco.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Krillin.App\\Krillin.App.Android\\Krillin.App.Android.csproj
-		SccProjectTopLevelParentUniqueName1 = Krillin.App.sln
-		SccProjectName1 = Krillin.App/Krillin.App.Android
-		SccLocalPath1 = Krillin.App\\Krillin.App.Android
-		SccProjectUniqueName2 = Krillin.App\\Krillin.App.iOS\\Krillin.App.iOS.csproj
-		SccProjectTopLevelParentUniqueName2 = Krillin.App.sln
-		SccProjectName2 = Krillin.App/Krillin.App.iOS
-		SccLocalPath2 = Krillin.App\\Krillin.App.iOS
-		SccProjectUniqueName3 = Krillin.App\\Krillin.App.UWP\\Krillin.App.UWP.csproj
-		SccProjectTopLevelParentUniqueName3 = Krillin.App.sln
-		SccProjectName3 = Krillin.App/Krillin.App.UWP
-		SccLocalPath3 = Krillin.App\\Krillin.App.UWP
-		SccProjectUniqueName4 = Krillin.App\\Krillin.App\\Krillin.App.csproj
-		SccProjectTopLevelParentUniqueName4 = Krillin.App.sln
-		SccProjectName4 = Krillin.App/Krillin.App
-		SccLocalPath4 = Krillin.App\\Krillin.App
+		{E676BACC-64D5-4870-96C5-86A2B41D31B9} = {1348D569-3172-449E-BD0D-DC2B9D912436}
 	EndGlobalSection
 EndGlobal
