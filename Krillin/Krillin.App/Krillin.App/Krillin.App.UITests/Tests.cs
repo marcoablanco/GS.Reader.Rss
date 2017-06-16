@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.IO;
 using System.Linq;
 using NUnit.Framework;
@@ -40,11 +40,17 @@ namespace Krillin.App.UITests
             this.app.WaitForElement("ListPost", timeout: TimeSpan.FromSeconds(20));
 
             if (this.platform == Platform.Android)
+            {
                 this.app.Tap(x => x.Class("ListViewRenderer").Child(0));
+                this.app.WaitForElement("LblText");
+            }
             else if (this.platform == Platform.iOS)
+            {
                 this.app.Tap(x => x.Class("UITableView").Child(0));
+                this.app.WaitForNoElement("ListPost");
+            }
 
-            this.app.WaitForNoElement("ListPost");
+            
         }
     }
 }
