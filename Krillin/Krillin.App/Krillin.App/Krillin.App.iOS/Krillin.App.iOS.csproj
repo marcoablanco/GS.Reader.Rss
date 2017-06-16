@@ -137,10 +137,13 @@
       <HintPath>..\..\packages\Xamarin.Forms.2.3.4.247\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="Calabash">
+      <HintPath>..\..\packages\Xamarin.TestCloud.Agent.0.20.6\lib\Xamarin.iOS10\Calabash.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Krillin.App\Krillin.App.csproj">
-      <Project>{56ef8052-d8fe-46b3-8f02-1754294b2ccf}</Project>
+      <Project>{D0CC2CF8-70D7-4FCF-951F-F0B860E5C846}</Project>
       <Name>Krillin.App</Name>
     </ProjectReference>
   </ItemGroup>

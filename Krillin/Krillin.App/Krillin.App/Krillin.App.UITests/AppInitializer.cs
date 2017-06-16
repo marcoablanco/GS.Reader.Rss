@@ -17,13 +17,17 @@
             if (platform == Platform.Android)
             {
                 return ConfigureApp
-                    .Android
+                    .Android.InstalledApp("com.krillin.app")
+                    .EnableLocalScreenshots()
+                    .PreferIdeSettings()
                     .StartApp();
             }
             else if (platform == Platform.iOS)
             {
                 return ConfigureApp
-                    .iOS
+                    .iOS.InstalledApp("com.Krillin.App")
+                    .EnableLocalScreenshots()
+                    .PreferIdeSettings()
                     .StartApp();
             }
 
