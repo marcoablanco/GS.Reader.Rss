@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BaseView xmlns="http://xamarin.com/schemas/2014/forms"
+			   xmlns:base="clr-namespace:Krillin.App.Views.Base"
+			   xmlns:viewmodels="clr-namespace:Krillin.App.ViewModels"
+			   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			   x:Class="Krillin.App.Views.MainView"
+			   x:TypeArguments="viewmodels:MainViewModel"
+			   Title="DevsDNA Blog">
+	<base:BaseView.Content>
+		<Grid x:Name="MainGrid"
+			  RowSpacing="0" >
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="1"/>
+				<RowDefinition Height="*"/>
+			</Grid.RowDefinitions>
+
+			<Label x:Name="LblVersion" AutomationId="LblVersion"
+				   Grid.Row="0"
+				   Text="{Binding Rss.Version}" FontSize="10" FontAttributes="Italic" 
+				   HorizontalTextAlignment="End"/>
+
+			<BoxView x:Name="BoxSeparator" AutomationId="BoxSeparator"
+					 Grid.Row="1"
+					 BackgroundColor="LightGray"
+					 HeightRequest="1"/>
+
+			<ListView x:Name="ListPost" AutomationId="ListPost"
+					  Grid.Row="2"
+					  HasUnevenRows="True"
+					  ItemsSource="{Binding Rss.Channel.Item}">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<Frame x:Name="FrameCell" AutomationId="FrameCell"
+								   CornerRadius="25" OutlineColor="Blue" HasShadow="False"
+								   Margin="10">
+								<ContentView x:Name="BackgroundSolid">
+									<Grid x:Name="GridCell">
+										<Grid.RowDefinitions>
+											<RowDefinition Height="Auto"/>
+											<RowDefinition Height="1"/>
+											<RowDefinition Height="Auto"/>
+											<RowDefinition Height="1"/>
+											<RowDefinition Height="*"/>
+										</Grid.RowDefinitions>
+										<Label x:Name="LblTitlePost"
+											Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+											Text="{Binding Title}" FontSize="Large"
+											HorizontalTextAlignment="Start" VerticalOptions="Start" />
+										<BoxView x:Name="BoxSeparator1"
+												Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+												BackgroundColor="LightGray"
+												Margin="20,0,20,0"/>
+										<Label x:Name="LblDate"
+											Grid.Row="2" Grid.Column="0"
+											Text="{Binding PubDate}" FontSize="Small"
+											HorizontalTextAlignment="Start"/>
+										<Label x:Name="LblCategories"
+											Grid.Row="2" Grid.Column="1"
+											Text="{Binding Category}" FontSize="Small"
+											HorizontalTextAlignment="End"/>
+										<BoxView x:Name="BoxSeparator2"
+												Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+												BackgroundColor="LightGray"
+												Margin="20,0,20,0"/>
+										<Label x:Name="LblDescription"
+											Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"
+											Text="{Binding Description}" FontSize="Medium"
+											HorizontalTextAlignment="Start" />
+									</Grid>
+								</ContentView>
+							</Frame>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</Grid>
+	</base:BaseView.Content>
+</base:BaseView>

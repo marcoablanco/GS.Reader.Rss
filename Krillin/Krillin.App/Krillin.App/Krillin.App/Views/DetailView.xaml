@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BaseView xmlns="http://xamarin.com/schemas/2014/forms"
+			   xmlns:base="clr-namespace:Krillin.App.Views.Base"
+			   xmlns:viewmodels="clr-namespace:Krillin.App.ViewModels"
+			   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               x:Class="Krillin.App.Views.DetailView"
+			   x:TypeArguments="viewmodels:DetailViewModel"
+			   Title="{Binding Title}">
+
+	<StackLayout>
+		<Button x:Name="BtnBack"
+				Text="Volver"
+				TranslationY="20"
+				Command="{Binding BackCommand}"
+				HorizontalOptions="FillAndExpand" VerticalOptions="Fill"/>
+		<Label x:Name="LblText" AutomationId="LblText"
+			   Text="{Binding TextPost}" LineBreakMode="WordWrap"
+			   TranslationY="20"
+			   HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+		<Label x:Name="LblTitle" AutomationId="LblTitle"
+			   Text="{Binding Title}" LineBreakMode="WordWrap"
+			   TranslationY="20"
+			   HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+	</StackLayout>
+</base:BaseView>
