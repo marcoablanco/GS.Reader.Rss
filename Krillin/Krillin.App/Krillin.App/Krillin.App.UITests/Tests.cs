@@ -32,6 +32,7 @@ namespace Krillin.App.UITests
             this.app.WaitForElement("ListPost", timeout: TimeSpan.FromSeconds(20));
             AppResult[] result = this.app.Query(x => x.Marked("ListPost").Child());
             Assert.IsTrue(result.Length > 0);
+            this.app.Screenshot("End Test.");
         }
 
         [Test]
@@ -42,15 +43,17 @@ namespace Krillin.App.UITests
             if (this.platform == Platform.Android)
             {
                 this.app.Tap(x => x.Class("ListViewRenderer").Child(0));
+                this.app.Screenshot("Tap in cell.");
                 this.app.WaitForElement("LblText");
             }
             else if (this.platform == Platform.iOS)
             {
                 this.app.Tap(x => x.Class("UITableView").Child(0));
+                this.app.Screenshot("Tap in cell.");
                 this.app.WaitForNoElement("ListPost");
             }
 
-            
+            this.app.Screenshot("End Test.");
         }
     }
 }
